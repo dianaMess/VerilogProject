@@ -9,7 +9,7 @@ module test_3();
    initial begin
       $dumpfile("dump3.vcd");
       $dumpvars(0, test_3);
-      #45
+      #48
       $finish;
    end
    initial begin

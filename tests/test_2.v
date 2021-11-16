@@ -7,7 +7,7 @@ module test_2();
    wire empty, valid;
    main _main(.clk(clk), .rst(rst), .in(in), .op(op), .apply(apply), .tail(tail), .empty(empty), .valid(valid));
    initial begin
-      $dumpfile("dump1.vcd");
+      $dumpfile("dump2.vcd");
       $dumpvars(0, test_2);
       #40
       $finish;
