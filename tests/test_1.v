@@ -13,7 +13,7 @@ module test_1();
       $finish;
    end
    initial begin
-      #1
+      #2
       rst = 1;
       #2
       rst = 0;
@@ -35,6 +35,7 @@ module test_1();
       in = 8'b0000_0000;
       apply = 1'b1;
       op = 3'b101;
+
       #2
       apply = 1'b1;
       op = 3'b000;
@@ -48,22 +49,21 @@ module test_1();
       in = 8'b0000_0110;
       apply = 1'b1;
       op = 3'b101;
+
       #2
       apply = 1'b1;
       op = 3'b110;
       #2
       apply = 1'b1;
       op = 3'b000;
+
       #2
       apply = 1'b1;
       op = 3'b010;
       #2
       apply = 1'b1;
       op = 3'b110;
-      #2
-      apply = 1'b1;
-      op = 3'b000;
- 
+
    end
    initial clk = 0;
    always #1 clk = !clk;

@@ -13,7 +13,7 @@ module test_3();
       $finish;
    end
    initial begin
-      #1
+      #2
       rst = 1;
       #2
       rst = 0;
@@ -68,7 +68,7 @@ module test_3();
       rst = 1;
       #2
       rst = 0;
-      in = 8'b0001_1000;
+      in = 8'b0000_1010;
       apply = 1'b1;
       op = 3'b101;
       #2
@@ -76,12 +76,12 @@ module test_3();
       apply = 1'b1;
       op = 3'b101; 
       #2
-      in = 8'b1001_1001;
+      in = 8'b0001_1001;
       apply = 1'b1;
       op = 3'b101; 
-      #4
-      apply = 1'b0;
       #2
+      apply = 1'b0;
+      #4
       in = 8'b0101_1001;
       apply = 1'b1;
       op = 3'b101;  

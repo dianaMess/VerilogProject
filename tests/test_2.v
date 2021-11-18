@@ -9,46 +9,46 @@ module test_2();
    initial begin
       $dumpfile("dump2.vcd");
       $dumpvars(0, test_2);
-      #40
+      #25
       $finish;
    end
    initial begin
       #2
       rst = 1;
-      #4
+      #2
       rst = 0;
       in = 8'b0000_0010;
       apply = 1'b1;
       op = 3'b101;
-      #4
+      #2
       in = 8'b0000_0100;
       apply = 1'b1;
       op = 3'b101;
-      #4
+      #2
       in = 8'b0000_0001;
       apply = 1'b1;
       op = 3'b101;
-      #4
+      #2
       apply = 1'b1;
       op = 3'b011;
-      #4
+      #2
       apply = 1'b1;
       op = 3'b100;
-      #4
+      #2
       in = 8'b0000_0110;
       apply = 1'b1;
       op = 3'b101;
-      #4
+      #2
       in = 8'b0010_0101;
       apply = 1'b1;
       op = 3'b101;
-      #4
+      #2
       apply = 1'b1;
       op = 3'b100;
-      #4
+      #2
       apply = 1'b0;
    end
    initial clk = 0;
-   always #2 clk = !clk;
+   always #1 clk = !clk;
 endmodule
    
