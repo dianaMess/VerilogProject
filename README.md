@@ -5,7 +5,7 @@ Makefile запускает три теста test_1, test_2, test_3\
 make first\
 make second\
 make third\
-## 4-е задание(Реализаця автомата) 
+## 4-е задание(Реализация автомата) 
 Makefile запускает два теста test_1, test_2\
 Соотвествующие команды\
 make first\
